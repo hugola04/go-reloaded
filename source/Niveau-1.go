@@ -1,3 +1,5 @@
 package source
 
-func 
+func Niveau1() string {
+	return "yo"
+}
