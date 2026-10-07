@@ -5,12 +5,17 @@ import (
 	"os"
 
 	Niveauun "go-reloaded/source"
+	Niveautrois "go-reloaded/source"
 )
 
 func main() {
-	data,_ := os.ReadFile("test.txt")
+	data, _ := os.ReadFile("test.txt")
 
-	texte := Niveauun.Niveauun(string(data))
+	texte := string(data)
+
+	texte = Niveauun.Niveauun(texte)
+	//rajoute ton niveaudeux
+	texte = Niveautrois.Niveautrois(texte)
 
 	fmt.Println(texte)
 }
