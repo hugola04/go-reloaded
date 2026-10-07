@@ -1,10 +1,16 @@
 package main
 
-import "fmt"
 import (
-	Niveau-1"go-reloaded/source"
+	"fmt"
+	"os"
+
+	Niveauun "go-reloaded/source"
 )
 
-func main(){
-	fmt.Println(Niveau-1())
+func main() {
+	data,_ := os.ReadFile("test.txt")
+
+	texte := Niveauun.Niveauun(string(data))
+
+	fmt.Println(texte)
 }
