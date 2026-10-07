@@ -1,5 +1,7 @@
 package source
 
-func Niveau1() string {
-	return "yo"
+import"fmt"
+
+func{
+	Println("COUCOU")
 }

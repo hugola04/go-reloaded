@@ -1,10 +1,10 @@
 package main
 
+import "fmt"
 import (
-	"fmt"
-	"go-reloaded/source"
+	Niveau-1"go-reloaded/source"
 )
 
-func main() {
-	fmt.Println(source.Niveau1()) 
+func main(){
+	fmt.Println(Niveau-1())
 }
