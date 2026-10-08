@@ -1,4 +1,4 @@
-package main
+package test
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"go-reloaded/source"
 )
 
-func main() {
+func test() {
 	data, _ := os.ReadFile("test.txt")
 
 	texte := string(data)
