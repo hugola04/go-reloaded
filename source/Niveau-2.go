@@ -18,7 +18,7 @@ func capitalize(word string) string {
 }
 
 func Niveaudeux(word []string) []string {
-	for i := 0; i < len(word); i++ {
+	for i:= 0; i < len(word); i++ {
 		
 		if (word[i] == "(up," || word[i] == "(low," || word[i] == "(cap,") && i+1 < len(word) {
 			action := word[i][1 : len(word[i])-1]

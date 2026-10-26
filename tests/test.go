@@ -1,10 +1,9 @@
-package test
+package main
 
 import (
 	"fmt"
 	"os"
 	"strings"
-
 	"go-reloaded/source"
 )
 
