@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-package source
-=======
 package source
 
 import (
@@ -64,4 +61,3 @@ func quoteLine(line string) string {
 func isLetter(r rune) bool {
 	return unicode.IsLetter(r)
 }
->>>>>>> main
