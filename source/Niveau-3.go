@@ -21,12 +21,13 @@ func Niveautrois(texte string) string {
 	return strings.Join(resultat, " ")
 }
 
+
 func estPonctuation(mot string) bool {
 	for _, caractere := range mot {
 
 		if !strings.ContainsRune(".,!?:;", caractere) {
 			return false
-		}
+		} 
 	}
 	return len(mot) > 0
 }

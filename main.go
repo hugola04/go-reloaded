@@ -6,6 +6,7 @@ import (
 
 	Niveauun "go-reloaded/source"
 	Niveautrois "go-reloaded/source"
+	Niveauquatre "go-reloaded/source"
 )
 
 func main() {
@@ -15,6 +16,7 @@ func main() {
 
 	texte = Niveauun.Niveauun(texte)
 	texte = Niveautrois.Niveautrois(texte)
+	texte = Niveauquatre.Niveauquatre(texte)
 
 	fmt.Println(texte)
 }
