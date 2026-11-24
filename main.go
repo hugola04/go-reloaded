@@ -15,7 +15,6 @@ func main() {
 	texte := string(data)
 
 	texte = Niveauun.Niveauun(texte)
-	//rajoute ton niveaudeux
 	texte = Niveautrois.Niveautrois(texte)
 	texte = Niveauquatre.Niveauquatre(texte)
 
