@@ -17,16 +17,27 @@ func main() {
 
 	texte := string(data)
 
-	// Niveau 1 (prend un string, renvoie un string)
 	texte = source.Niveauun(texte)
 
-	// Niveau 2 (prend un []string, renvoie un []string)
 	mots := strings.Fields(texte)
 	mots = source.Niveaudeux(mots)
 	texte = strings.Join(mots, " ")
 
-	// Niveau 3 (prend un string, renvoie un string)
 	texte = source.Niveautrois(texte)
+	texte = source.Niveauquatre(texte)
+	texte = source.Niveaucinq(texte)
 
-	fmt.Println(texte)
+	expected, err := os.ReadFile("finis.txt")
+	if err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+
+	if strings.Join(strings.Fields(texte), " ") != strings.Join(strings.Fields(string(expected)), " ") {
+		fmt.Fprintln(os.Stderr, "Échec : le résultat des cinq niveaux ne correspond pas à finis.txt.")
+		fmt.Fprintf(os.Stderr, "Attendu : %s\nObtenu : %s\n", strings.Join(strings.Fields(string(expected)), " "), strings.Join(strings.Fields(texte), " "))
+		os.Exit(1)
+	}
+
+	fmt.Println("Test réussi : test.txt après les cinq niveaux correspond à finis.txt.")
 }
